@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_pet
+      author: Kris
+      changes:
+        - createTable:
+            tableName: PET
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                  autoIncrement: true
+                  remarks: "Auto-increment primary key"
+              - column:
+                  name: name
+                  type: text
+              - column:
+                  name: code
+                  type: text
+              - column:
+                  name: type
+                  type: text
+              - column:
+                  name: furcolor
+                  type: text
+              - column:
+                  name: country
+                  type: text

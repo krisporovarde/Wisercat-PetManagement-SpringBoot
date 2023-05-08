@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: defaultDataSet
+      author: Kris
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: name
+                  value: Mustikas
+              - column:
+                  name: code
+                  value: "202211151535"
+              - column:
+                  name: type
+                  value: Cat
+              - column:
+                  name: furcolor
+                  value: Black
+              - column:
+                  name: country
+                  value: Estonia
+            dbms: 'h2, !postgresql, !mysql'
+            schemaName: public
+            tableName: PET
+        - insert:
+            columns:
+              - column:
+                  name: name
+                  value: Roy
+              - column:
+                  name: code
+                  value: "202211151536"
+              - column:
+                  name: type
+                  value: Dog
+              - column:
+                  name: furcolor
+                  value: Brown
+              - column:
+                  name: country
+                  value: Latvia
+            dbms: 'h2, postgresql, !mysql'
+            schemaName: public
+            tableName: PET
+        - insert:
+            columns:
+              - column:
+                  name: name
+                  value: Charles
+              - column:
+                  name: code
+                  value: "202211151536"
+              - column:
+                  name: type
+                  value: Horse
+              - column:
+                  name: furcolor
+                  value: White
+              - column:
+                  name: country
+                  value: Norway
+            dbms: 'h2, postgresql, !mysql'
+            schemaName: public
+            tableName: PET
